@@ -17,12 +17,3 @@ model javascript_context {
   header_four  String?
 }
 
-enum continents {
-  Africa
-  Antarctica
-  Asia
-  Europe
-  Oceania
-  North_America @map("North America")
-  South_America @map("South America")
-}
