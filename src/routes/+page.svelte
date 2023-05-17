@@ -16,7 +16,12 @@
 					<picture>
 						<source srcset="/images/svg/home/wrapper-start/12.svg" media="(min-width:1140px)" />
 
-						<img src="/images/svg/home/wrapper-start/12-small.svg" alt="" style="width:auto;" />
+						<img
+							src="/images/svg/home/wrapper-start/12-small.svg"
+							alt=""
+							width="375px"
+							height="295px"
+						/>
 					</picture>
 				</div>
 			</div>
