@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Andromina|Home</title>
+</svelte:head>
+
 <main class="wrapper">
 	<section class="wrapper-start">
 		<div class="container">
