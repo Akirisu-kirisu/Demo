@@ -2,6 +2,7 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
+	import Book from '$lib/components/svg/book.svelte';
 </script>
 
 <svelte:head>
@@ -47,20 +48,8 @@
 					<div class="text-center">
 						<h1>Chose What to learn</h1>
 						<p>Start Learning Web Development</p>
-						<picture>
-							<source
-								srcset="/images/svg/home/wrapper-second/book-sm.svg"
-								media="(min-width:1140px)"
-								type="image/svg+xml"
-							/>
-							<img
-								src="/images/svg/home/wrapper-second/book.svg"
-								class="img-fluid"
-								alt=""
-								width="278px"
-								height="216px"
-							/>
-						</picture>
+
+						<Book />
 					</div>
 				</div>
 				<div class="col-md-6 col-12">
@@ -78,6 +67,143 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="wrapper-third">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-12">
+					<div class="wrapper-third-text">
+						<h2>Language</h2>
+						<p>
+							Web developers often work with a team of designers, project managers, and other
+							developers to ensure that the website or application meets the client's specifications
+							and is delivered on time. They must also stay up-to-date with the latest web
+							development technologies and best practices to ensure that the websites they build are
+							effective, secure, and scalable.
+						</p>
+					</div>
+				</div>
+				<div class="col-12 text-center text-md-start">
+					<button class="">Learn More...</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="wrapper-four">
+		<div class="container">
+			<div class="row text-center align-items-md-center">
+				<div class="col-md-6 col-12">
+					<div class="wrapper-four-text text-center text-md-start">
+						<h2>Guide</h2>
+						<p>
+							Web developers typically have a strong understanding of programming languages such as
+							HTML, CSS, JavaScript, and one or more back-end programming languages like PHP, Ruby
+							on Rails, or Node.js. They use these skills to bring websites to life, making sure
+							that they are attractive, functional, and user-friendly.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-12">
+					<!-- <img width="548px" height="425" src="/images/svg/book.svg" alt="" /> -->
+					<picture>
+						<source
+							srcset="/images/svg/home/wrapper-second/book-sm.svg"
+							media="(min-width:1140px)"
+							type="image/svg+xml"
+						/>
+						<img
+							src="/images/svg/home/wrapper-second/book.svg"
+							class="img-fluid"
+							alt=""
+							width="278px"
+							height="216px"
+						/>
+					</picture>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-fifth">
+		<div class="container">
+			<div class=" row text-center">
+				<div class="col-12 col-xl-6 col-lg-12">
+					<div class="wrapper-fifth-text text-xl-start">
+						<h3>
+							Practice with Online IDE <br />Compilers
+						</h3>
+						<p>
+							We believe coding should be accessible to all. So we made our own compilers for web
+							and mobile. And it's free!
+						</p>
+						<button>Online Editor <span> Start Coding</span></button>
+					</div>
+				</div>
+				<div class="col-lg-12 col-xl-6">
+					<img width="548px" height="351px" src="/images/svg/home/editor.svg" alt="" />
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer-nav text-center">
+						<p class="">Copyright © 2018 • Your Company <br /> All rights reserved</p>
+						<a class="text-decoration-none" href="#/"
+							>Made in Setproduct.com <br /> One man digital agency</a
+						>
+						<a class="d-block" href="www.rexsahvan.com">hello@setproduct.com</a>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="footer-links d-flex justify-content-center mt-3">
+						<a href="www.rexsahvan.com"
+							><img
+								width="41px"
+								height="40px"
+								src="/images/svg/footer-icons/icon-facebook.svg"
+								alt=""
+							/></a
+						>
+						<a href="www.rexsahvan.com"
+							><img
+								width="41px"
+								height="40px"
+								src="/images/svg/footer-icons/icon-linkedin.svg"
+								alt=""
+							/></a
+						>
+						<a href="www.rexsahvan.com"
+							><img
+								width="41px"
+								height="40px"
+								src="/images/svg/footer-icons/icon-slack.svg"
+								alt=""
+							/></a
+						>
+						<a href="www.rexsahvan.com"
+							><img
+								width="41px"
+								height="40px"
+								src="/images/svg/footer-icons/icon-twitter.svg"
+								alt=""
+							/></a
+						>
+						<a href="www.rexsahvan.com"
+							><img
+								width="41px"
+								height="40px"
+								src="/images/svg/footer-icons/icon-youtube.svg"
+								alt=""
+							/></a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </main>
 
 <style lang="scss">
