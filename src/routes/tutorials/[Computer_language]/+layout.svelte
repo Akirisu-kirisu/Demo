@@ -1,7 +1,9 @@
 <script lang="ts">
-	import type { LayoutData } from './$types';
+	import type { Config } from '@sveltejs/adapter-vercel';
 
-	export let data: LayoutData;
+	export const config: Config = {
+		runtime: 'nodejs18.x'
+	};
 </script>
 
 <slot><!-- optional fallback --></slot>

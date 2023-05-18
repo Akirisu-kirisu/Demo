@@ -1,0 +1,76 @@
+/* Variables and mixins declared here will be available in all other SCSS files */
+@import 'bootstrap/scss/functions'; /* Override Bootstrap's variables here */
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
+
+// $grid-breakpoints: (
+// 	xs: 0,
+// 	sm: 480px,
+// 	md: 768px,
+// 	lg: 1024px
+// );
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	// xxl: 1320px
+);
+// 640px, 1024px, 1400px
+$breakpoints-up: (
+	'xs': '380px',
+	'sm': '576px',
+	'md': ' 768px',
+	'lg': '992px',
+	'xl': '1200px',
+	'xxl': '1400px'
+);
+
+// 639px, 1023px, 1399px
+$breakpoints-down: (
+	'xs': '379px',
+	'sm': '576px',
+	'md': ' 767px',
+	'lg': '991px',
+	'xl': '1199px',
+	'xxl': '1399px'
+);
+
+@mixin breakpoint-up($size) {
+	@media (min-width: map-get($breakpoints-up, $size)) {
+		@content;
+	}
+}
+
+@mixin breakpoint-down($size) {
+	@media (max-width: map-get($breakpoints-down, $size)) {
+		@content;
+	}
+}
+
+:root {
+	--primary-color: rgb(255, 255, 255);
+	--heading-color: rgb(36, 42, 44);
+	--text-color: rgb(33, 37, 41);
+	font-family: 'Poppinsa' !important;
+}
+
+// [data-theme='dark'] {
+// 	--primary-color: rgb(24, 26, 27);
+// 	--heading-color: rgb(207, 203, 196);
+// 	--text-color: rgb(209, 205, 199);
+// }
+
+:root {
+	font-size: 14px;
+	@include breakpoint-up(xs) {
+		font-size: 15px;
+	}
+
+	@include breakpoint-up(lg) {
+		font-size: 15px;
+	}
+}
