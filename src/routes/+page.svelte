@@ -57,7 +57,7 @@
 						{#each data.article as dialect}
 							<a href="#/" class="lang">
 								<img width="49px" height="49px" src="/images/svg/navbar/{dialect.img}.svg" alt="" />
-								<h5 class="m-0">{dialect.alias}</h5>
+								<h1 class="m-0">{dialect.alias}</h1>
 								<p class="m-0">{dialect.title}</p>
 							</a>
 						{/each}
