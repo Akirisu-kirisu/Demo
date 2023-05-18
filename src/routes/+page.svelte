@@ -53,7 +53,13 @@
 								media="(min-width:1140px)"
 								type="image/svg+xml"
 							/>
-							<img src="/images/svg/home/wrapper-second/book.svg" class="img-fluid" alt="" />
+							<img
+								src="/images/svg/home/wrapper-second/book.svg"
+								class="img-fluid"
+								alt=""
+								width="278px"
+								height="216px"
+							/>
 						</picture>
 					</div>
 				</div>
