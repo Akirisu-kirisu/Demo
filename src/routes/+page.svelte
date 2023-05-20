@@ -73,14 +73,14 @@
 			<div class="row">
 				<div class="col-md-6 col-12">
 					<div class="wrapper-third-text">
-						{#await data.lazy.landing}
-							<p>Loading more posts...</p>
-						{:then posts}
-							<h2>{posts[0].title}</h2>
-							<p>{posts[0].summary}</p>
-						{:catch error}
-							<p>Error loading posts...</p>
-						{/await}
+						<h2>Languages</h2>
+						<p>
+							Web developers often work with a team of designers, project managers, and other
+							developers to ensure that the website or application meets the client's specifications
+							and is delivered on time. They must also stay up-to-date with the latest web
+							development technologies and best practices to ensure that the websites they build are
+							effective, secure, and scalable.
+						</p>
 					</div>
 				</div>
 				<div class="col-12 text-center text-md-start">
@@ -95,14 +95,13 @@
 			<div class="row text-center align-items-md-center">
 				<div class="col-md-6 col-12">
 					<div class="wrapper-four-text text-center text-md-start">
-						{#await data.lazy.landing}
-							<p>Loading more posts...</p>
-						{:then posts}
-							<h2>{posts[1].title}</h2>
-							<p>{posts[1].summary}</p>
-						{:catch error}
-							<p>Error loading posts...</p>
-						{/await}
+						<h2>Guide</h2>
+						<p>
+							Web developers typically have a strong understanding of programming languages such as
+							HTML, CSS, JavaScript, and one or more back-end programming languages like PHP, Ruby
+							on Rails, or Node.js. They use these skills to bring websites to life, making sure
+							that they are attractive, functional, and user-friendly.
+						</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-12">
@@ -129,15 +128,11 @@
 			<div class=" row text-center">
 				<div class="col-12 col-xl-6 col-lg-12">
 					<div class="wrapper-fifth-text text-xl-start">
-						{#await data.lazy.landing}
-							<p>Loading more posts...</p>
-						{:then posts}
-							<h2>{posts[2].title}</h2>
-							<p>{posts[2].summary}</p>
-							<button>Online Editor <span> Start Coding</span></button>
-						{:catch error}
-							<p>Error loading posts...</p>
-						{/await}
+						<h2>Practice with Online IDE Compilers</h2>
+						<p>
+							We believe coding should be accessible to all. So we made our own compilers for web
+							and mobile. And it's free!
+						</p>
 					</div>
 				</div>
 				<div class="col-lg-12 col-xl-6">
