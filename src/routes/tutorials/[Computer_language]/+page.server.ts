@@ -11,7 +11,7 @@ export const load: PageServerLoad = async ({ params, url }) => {
 		};
 
 		return {
-			article: getJavaScriptContext()
+			posts: getJavaScriptContext()
 		};
 	}
 };

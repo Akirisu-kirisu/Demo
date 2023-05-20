@@ -1,3 +1,4 @@
+<h1>GG</h1>
 <!-- <script lang="ts">
 	import { Container, Icon } from 'sveltestrap';
 	import { NavbarBrand, Nav, NavItem, NavLink } from 'sveltestrap';

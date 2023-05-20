@@ -3,6 +3,7 @@
 	export let data: PageData;
 
 	import Book from '$lib/components/svg/book.svelte';
+	import Languages from '$lib/components/languages.svelte';
 </script>
 
 <svelte:head>
@@ -54,12 +55,8 @@
 				</div>
 				<div class="col-md-6 col-12">
 					<div class="wrapper-second-langs">
-						{#each data.article as dialect}
-							<a href="#/" class="lang">
-								<img width="49px" height="49px" src="/images/svg/navbar/{dialect.img}.svg" alt="" />
-								<h5 class="m-0">{dialect.alias}</h5>
-								<p class="m-0">{dialect.title}</p>
-							</a>
+						{#each data.article as { img, title, alias }}
+							<Languages {img} {alias} {title} />
 						{/each}
 						<button>More..</button>
 					</div>
