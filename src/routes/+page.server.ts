@@ -1,12 +1,10 @@
-import { prisma } from '$lib/server/prisma';
+import { db } from '$lib/database/db';
 import type { PageServerLoad } from './$types';
 export const load: PageServerLoad = async () => {
-	const getJavaScriptContext = async () => {
-		const allJsContext = await prisma.languages.findMany();
-		return allJsContext;
-	};
-
 	return {
-		article: getJavaScriptContext()
+		article: db.getJavaScriptContext(0),
+		lazy: {
+			landing: db.getLandingPage(1)
+		}
 	};
 };
