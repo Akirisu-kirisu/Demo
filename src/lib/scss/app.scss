@@ -175,7 +175,7 @@ body {
 				img {
 					grid-area: img;
 				}
-				h1 {
+				h5 {
 					grid-area: title;
 					font-weight: 900;
 					font-size: 1.25rem;
@@ -185,7 +185,7 @@ body {
 					grid-area: text;
 					font-size: 1rem;
 				}
-				&:hover h1 {
+				&:hover h5 {
 					color: #33758b;
 					transition: color 0.4s;
 				}
